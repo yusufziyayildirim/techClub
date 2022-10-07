@@ -104,7 +104,7 @@ const SendMail = ({ styles, width }) => {
               />
               <p className="mt-1 text-sm text-gray-500" id="file_input_help">You can only upload files with PDF extension <br></br> (Max : 2MB)</p>
             </div>
-            <button type="submit" disabled={loading} className="bg-[#FF8D02] text-white hover:bg-yellow-500 focus:ring-2 focus:outline-none focus:ring-yellow-700 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors">Submit</button>
+            <button type="submit" disabled={loading} className={`${loading ? "cursor-not-allowed" : ""}  bg-[#FF8D02] text-white hover:bg-yellow-500 focus:ring-2 focus:outline-none focus:ring-yellow-700 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors`}>Submit</button>
           </form>
         </div>
       </div>

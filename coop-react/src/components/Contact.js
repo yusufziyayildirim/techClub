@@ -50,8 +50,12 @@ const Contact = ({ styles, width }) => {
               </p>
             </li>
           </ul>
+
+          {/* seperator */}
+          <div className='h-[.15rem] bg-white w-[99%]'></div>
+
           {/* Footer */}
-          <ul className='flex flex-col items-center text-[14px] mt-10 xs:px-16'>
+          <ul className='flex flex-col items-center text-[14px] xs:px-16'>
             <li><a href='https://netrd.orioninc.com.tr/kisisel-verilerin-korunmasi-kanunu-hakkinda-bilgilendirme.html' className='underline hover:text-[#FF8D02] transition-colors' target="_blank" rel="noreferrer">Kişisel Verilerin Korunmasına İlişkin Bildirim </a></li>
             <li><a href='https://netrd.orioninc.com.tr/Bilgi-Toplumu-Hizmetleri.html' className='underline hover:text-[#FF8D02] transition-colors' target="_blank" rel="noreferrer">Bilgi Toplumu Hizmetleri</a></li>
             <li><a href='https://netrd.orioninc.com.tr/Bilgi_Guvenligi_Politikasi.pdf' className='underline hover:text-[#FF8D02] transition-colors' target="_blank" rel="noreferrer">Bilgi Güvenliği Politikası</a></li>

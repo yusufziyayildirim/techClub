@@ -16,7 +16,7 @@ const Banner = ({ styles, width, scrollRef }) => {
           {/* Phone bg*/}
           <img className='absolute h-[450px] top-0 z-1 rounded-[40px]' src={phoneContent} alt="phone bg" />
           {/* Phone bottom logo */}
-          <img className='absolute bottom-10 left-1/2 -translate-x-[60px] w-32 z-50' src={lightLogo} />
+          <img className='absolute bottom-10 left-1/2 -translate-x-[60px] w-32 z-50' src={lightLogo} alt="logo" />
         </div>
 
         {/* Banner description */}
