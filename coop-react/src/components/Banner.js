@@ -20,7 +20,7 @@ const Banner = ({ styles, width, scrollRef }) => {
         </div>
 
         {/* Banner description */}
-        <div className='cursor-pointer flex-shrink-0'>
+        <div className='flex-shrink-0'>
           <h1 className='text-3xl font-bold text-[#FF8D02] text-center mb-3'> techClub</h1>
           <p className='text-white text-center'>As Orion Innovation Turkey techClub, we aim to share our technical competencies, techClub events and announcements.</p>
         </div>

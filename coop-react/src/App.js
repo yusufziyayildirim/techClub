@@ -3,7 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Banner from './components/Banner';
 import Contact from './components/Contact';
-import SendMail from './components/SendMail';
+// import SendMail from './components/SendMail';
 import useWindowWidth from 'react-hook-use-window-width';
 import { useRef } from 'react';
 
