@@ -49,7 +49,7 @@ const SendMail = ({ styles, width }) => {
       {/* Sendmail background image */}
       <div className='bg-about-image absolute w-full min-h-screen bg-center bg-cover'></div>
       {/* Sendmail content */}
-      <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="!max-w-lg relative mx-auto h-screen py-8 px-3 xs:px-0  flex flex-col justify-center">
+      <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="!max-w-lg relative mx-auto h-screen py-8 px-3 xs:px-0  flex flex-col justify-center 2xl:scale-125">
         {/* Title */}
         <h1 className="text-5xl font-bold text-[#FF8D02] mb-3">Send CV</h1>
         {/* Cv Form */}

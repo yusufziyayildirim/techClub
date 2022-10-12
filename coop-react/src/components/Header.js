@@ -12,7 +12,7 @@ const Header = ({ styles, width, handleScroll }) => {
             <div className='bg-header-image absolute w-full h-full bg-center bg-cover' />
 
             {/* Header Content */}
-            <div className={`bg-[#090909] flex items-center justify-center !max-h-screen !max-w-lg mx-auto z-50 text-white opacity-90 `} style={styles.size}>
+            <div className={`bg-[#090909] flex items-center justify-center !max-h-screen !max-w-lg mx-auto z-50 text-white opacity-90 2xl:scale-125`} style={styles.size}>
                 <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className='flex flex-col w-screen px-2 items-center justify-center gap-y-6'>
                     {/* Logo */}
                     <img className='w-64 ' src={lightLogo} alt="logo" />

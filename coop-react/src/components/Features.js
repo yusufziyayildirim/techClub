@@ -10,7 +10,7 @@ const Features = ({ styles, width }) => {
             <div className='bg-about-image absolute w-full h-screen bg-center bg-cover'> </div>
 
             {/* Counter content */}
-            <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="!max-w-full relative mx-auto px-3 xs:h-screen flex flex-col justify-center items-center">
+            <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="!max-w-full relative mx-auto px-3 xs:h-screen flex flex-col justify-center items-center 2xl:scale-125">
                 {/* Title */}
                 <div>
                     <h1 className="text-5xl font-bold text-[#FF8D02] mb-6 xs:mt-6 text-center">Why techClub</h1>

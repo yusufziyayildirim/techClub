@@ -7,7 +7,7 @@ const About = ({ styles, width }) => {
             <div className='bg-about-image absolute w-full h-screen bg-center bg-cover'> </div>
 
             {/* About content */}
-            <div style={width < 475 && width*0.0021<1 ?  styles.scale : {}} className="!max-w-lg px-3 xs:px-0 relative mx-auto py-8 h-screen flex flex-col justify-around">
+            <div style={width < 475 && width*0.0021<1 ?  styles.scale : {}} className="!max-w-lg px-3 xs:px-0 relative mx-auto py-8 h-screen flex flex-col justify-around 2xl:scale-110">
                 {/* Title */}
                 <h1 className="text-5xl font-bold text-[#FF8D02] mb-2">About</h1>
 

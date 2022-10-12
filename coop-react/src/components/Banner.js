@@ -9,7 +9,7 @@ const Banner = ({ styles, width, scrollRef }) => {
       {/* Banner background image */}
       <div className='bg-banner-image absolute w-full h-screen bg-center bg-cover'> </div>
       
-      <div ref={scrollRef} style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="max-w-[240px] relative mx-auto h-screen flex flex-col justify-center items-center" >
+      <div ref={scrollRef} style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="max-w-[240px] relative mx-auto h-screen flex flex-col justify-center items-center 2xl:scale-125" >
         <div className='relative h-[448px] w-[220px] translate-y-4 mb-6 '>
           {/* phone */}
           <img src={phone} alt="phone" className='absolute w-[220px] z-50'></img>

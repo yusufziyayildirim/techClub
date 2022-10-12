@@ -11,7 +11,7 @@ const Contact = ({ styles, width }) => {
       <div className='bg-header-image absolute w-full h-full bg-center bg-cover' />
 
       {/* Contact content */}
-      <div className={`bg-[#090909] flex flex-col items-center justify-center !max-h-screen !max-w-lg  mx-auto z-50 text-white opacity-90 `} style={styles.size}>
+      <div className={`bg-[#090909] flex flex-col items-center justify-center !max-h-screen !max-w-lg  mx-auto z-50 text-white opacity-90 2xl:scale-125`} style={styles.size}>
         <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className='flex flex-col xs:px-2 items-center justify-center gap-y-8'>
           <h1 className="text-6xl font-bold text-[#FF8D02]">Contact Us</h1>
           <ul className="flex flex-col px-14 gap-y-6">

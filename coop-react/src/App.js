@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Banner from './components/Banner';
 import Contact from './components/Contact';
+import Features from './components/Features';
 // import SendMail from './components/SendMail';
 import useWindowWidth from 'react-hook-use-window-width';
 import { useRef } from 'react';
@@ -38,6 +39,7 @@ function App() {
       <Header handleScroll={handleScroll} styles={styles} width={width} />
       <About styles={styles} width={width} />
       <Banner scrollRef={scrollRef} styles={styles} width={width} />
+      <Features styles={styles} width={width}/>
       {/* <SendMail styles={styles} width={width} /> */}
       <Contact styles={styles} width={width} />
     </>
