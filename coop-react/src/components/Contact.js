@@ -39,7 +39,7 @@ const Contact = ({ styles, width }) => {
                 www.netrd.com.tr
               </a>
             </li>
-            <li className="flex items-center">
+            <li className="flex items-center xs:w-[90%]">
               <div className="h-14 w-14 rounded-full flex-shrink-0 -translate-y-4 bg-white flex items-center justify-center mr-8">
                 <img src={location} className="w-8" alt="location" />
               </div>
