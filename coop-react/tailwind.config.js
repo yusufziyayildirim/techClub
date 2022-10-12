@@ -11,6 +11,9 @@ module.exports = {
       screens: {
         'xs': '475px',
       },
+      fontFamily: {
+        'saira': ['saira', 'sans-serif'],
+      },
     },
   },
   plugins: [
