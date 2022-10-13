@@ -4,7 +4,7 @@ import CounterUpPage from './CounterUpPage';
 const Box = ({ src, count, title }) => {
 
     return (
-        <div className='bg-[#0d0d0f] py-12 rounded-xl flex items-center justify-center -skew-y-6 hover:-skew-y-0 ease-out duration-500 group shadow-sm shadow-[#FF8D02]/80'>
+        <div className='bg-[#0d0d0f] py-12 rounded-xl flex items-center justify-center -skew-y-6 hover:-skew-y-0 ease-out duration-500 group shadow-lg shadow-[#0d0d0f]'>
             <div className='skew-y-6 group-hover:skew-y-0 ease-out duration-500 flex flex-col items-center font-saira'>
                 <img className='h-[85px] mb-5' src={src} alt='code' />
                 <CounterUpPage count={count} />
