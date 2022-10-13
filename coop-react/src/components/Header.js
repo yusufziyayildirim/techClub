@@ -1,5 +1,4 @@
-import {AnimationShake} from './ui/Animation'
-import Scroll from './ui/ScrollTrigger';
+import { AnimationSlide, AnimationShake } from './ui/Animation'
 import github from '../assets/icons/github.png'
 import instagram from '../assets/icons/instagram.png'
 import youtube from '../assets/icons/youtube.png'
@@ -17,18 +16,20 @@ const Header = ({ styles, width, handleScroll }) => {
             <div className={`bg-[#090909] flex items-center justify-center !max-h-screen !max-w-lg mx-auto z-50 text-white opacity-90 2xl:scale-125`} style={styles.size}>
                 <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className='flex flex-col w-screen px-2 items-center justify-center gap-y-6'>
                     {/* Logo */}
-                    <img className='w-64 ' src={lightLogo} alt="logo" />
+                    <AnimationSlide delay={0.87}>
+                        <img className='w-64 ' src={lightLogo} alt="logo" />
+                    </AnimationSlide>
 
                     {/* seperator */}
                     <div className='h-[.15rem] bg-white w-full'></div>
 
                     <div className='flex text-4xl'>
                         <p className='mr-2'>Follow us on</p>
-                        <Scroll>
-                            <AnimationShake delay={3}>
-                                <span onClick={handleScroll} className='text-[#FF8D02] cursor-pointer'>techClub</span>
-                            </AnimationShake>
-                        </Scroll>
+                        {/* <Scroll> */}
+                        <AnimationShake>
+                            <span onClick={handleScroll} className='text-[#FF8D02] cursor-pointer'>techClub</span>
+                        </AnimationShake>
+                        {/* </Scroll> */}
                     </div>
 
 

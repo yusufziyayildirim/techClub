@@ -22,8 +22,8 @@ const Features = ({ styles, width }) => {
                         </div>
                     </AnimationFade>
                 </Scroll>
-
-                <div className='w-full lg:max-w-5xl grid grid-cols-1 xs:grid-cols-2 lg:!grid-cols-4 gap-y-10 gap-x-8 mt-16 text-white'>
+                
+                <div className='min-h-[300px] w-full lg:max-w-5xl grid grid-cols-1 xs:grid-cols-2 lg:!grid-cols-4 gap-y-10 gap-x-8 mt-16 text-white'>
                     <Scroll>
                         <AnimationFade delay={1}>
                             <Box title="Repositories" count={30} src={github} />
