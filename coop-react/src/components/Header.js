@@ -1,3 +1,5 @@
+import {AnimationShake} from './ui/Animation'
+import Scroll from './ui/ScrollTrigger';
 import github from '../assets/icons/github.png'
 import instagram from '../assets/icons/instagram.png'
 import youtube from '../assets/icons/youtube.png'
@@ -7,9 +9,9 @@ import lightLogo from '../assets/image/lightLogo.webp'
 
 const Header = ({ styles, width, handleScroll }) => {
     return (
-        <div className='h-screen relative flex items-center justify-center overflow-hidden'>
+        <div className='h-screen relative flex items-center justify-center overflow-hidden z-10'>
             {/* Header background image */}
-            <div className='bg-header-image absolute w-full h-full bg-center bg-cover' />
+            <div className='bg-header-image absolute w-full h-screen bg-center bg-cover' />
 
             {/* Header Content */}
             <div className={`bg-[#090909] flex items-center justify-center !max-h-screen !max-w-lg mx-auto z-50 text-white opacity-90 2xl:scale-125`} style={styles.size}>
@@ -20,7 +22,15 @@ const Header = ({ styles, width, handleScroll }) => {
                     {/* seperator */}
                     <div className='h-[.15rem] bg-white w-full'></div>
 
-                    <p className='text-4xl'>Follow us on <span onClick={handleScroll} className='text-[#FF8D02] cursor-pointer'>techClub</span></p>
+                    <div className='flex text-4xl'>
+                        <p className='mr-2'>Follow us on</p>
+                        <Scroll>
+                            <AnimationShake delay={3}>
+                                <span onClick={handleScroll} className='text-[#FF8D02] cursor-pointer'>techClub</span>
+                            </AnimationShake>
+                        </Scroll>
+                    </div>
+
 
                     {/* Social icons */}
                     <ul className='inline-grid w-full content-center grid-cols-3 gap-4 place-items-center'>
