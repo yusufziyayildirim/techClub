@@ -1,8 +1,9 @@
+import {AnimationFade} from './ui/Animation'
+import Scroll from './ui/ScrollTrigger';
 import phoneIcon from '../assets/icons/phoneIcon.png'
 import envelope from '../assets/icons/envelope.png'
 import laptop from '../assets/icons/laptop.png'
 import location from '../assets/icons/location.png'
-
 
 const Contact = ({ styles, width }) => {
   return (
@@ -13,7 +14,12 @@ const Contact = ({ styles, width }) => {
       {/* Contact content */}
       <div className={`bg-[#090909] flex flex-col items-center justify-center !max-h-screen !max-w-lg  mx-auto z-50 text-white opacity-90 2xl:scale-125`} style={styles.size}>
         <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className='flex flex-col xs:px-2 items-center justify-center gap-y-8'>
-          <h1 className="text-6xl font-bold text-[#FF8D02]">Contact Us</h1>
+          <Scroll>
+            <AnimationFade>
+              <h1 className="text-6xl font-bold text-[#FF8D02]">Contact Us</h1>
+            </AnimationFade>
+          </Scroll>
+
           <ul className="flex flex-col px-14 gap-y-6">
             <li className="flex items-center">
               <div className="h-14 w-14 rounded-full bg-white flex items-center justify-center mr-8 flex-shrink-0">
