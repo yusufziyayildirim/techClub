@@ -8,7 +8,7 @@ const Box = ({ src, count, title }) => {
             <div className='skew-y-6 group-hover:skew-y-0 ease-out duration-500 flex flex-col items-center font-saira'>
                 <img className='h-[85px] mb-5' src={src} alt='code' />
                 <CounterUpPage count={count} />
-                <h4 className='text-xl leading-8 font-bold mb-2 text-center text-[#e4e4e4] '>{title}</h4>
+                <h4 className='text-xl leading-8 font-bold text-center text-[#e4e4e4] '>{title}</h4>
             </div>
         </div>
     )
