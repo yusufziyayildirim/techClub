@@ -6,7 +6,7 @@ const About = ({ styles, width }) => {
 
     return (
         <div className='bg-about-image bg-cover bg-center'>
-            <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="px-3 xs:px-0 lg:!px-40 2xl:!px-96 relative mx-auto py-8 h-screen flex flex-col justify-around 2xl:scale-110 2xl:justify-center 2xl:gap-y-16">
+            <div style={width < 475 && width * 0.0021 < 1 ? styles.scale : {}} className="px-3 lg:!px-40 2xl:!px-96 relative mx-auto py-8 h-screen flex flex-col justify-around 2xl:scale-110 2xl:justify-center 2xl:gap-y-16">
                 {/* Title */}
                 <Scroll>
                     <AnimationFade delay={1.3}>
